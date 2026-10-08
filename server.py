@@ -1,1 +1,3 @@
-print("Vasco maior do rj")
+while true:
+ k = 1
+ 
