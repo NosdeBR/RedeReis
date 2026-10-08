@@ -1,13 +1,11 @@
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    # Renderiza o arquivo templates/index.html
-    return render_template('index.html')
+    return render_template("index.html")
 
-print("vasco maior do rj")
-
-if __name__ == '__main__':
-    app.run(debug=True),  port=int(os.environ.get("PORT", 5000)))
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))   
